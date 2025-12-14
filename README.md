@@ -1,2 +1,2 @@
-# LCD-Interfacing-with-8051
-LCD interfacing using 8051 microcontroller using Proteus software
+# 8051 Microcontroller Tutorials
+Tutorials using 8051 microcontroller using Proteus software
