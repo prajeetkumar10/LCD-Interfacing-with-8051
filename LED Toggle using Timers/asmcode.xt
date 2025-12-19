@@ -1,0 +1,23 @@
+ORG 00H
+
+    MOV TMOD, #01H  
+								 
+LOOP:
+    SETB P2.0
+    ACALL DELAY
+    CLR P2.0
+    ACALL DELAY
+    SJMP LOOP
+
+DELAY:
+    MOV TH0, #0F4H
+    MOV TL0, #0DCH
+    SETB TR0
+
+WAIT:
+    JNB TF0, WAIT
+    CLR TR0
+    CLR TF0
+    RET
+
+END
